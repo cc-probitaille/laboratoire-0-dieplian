@@ -80,7 +80,7 @@ Vous pouvez cocher chaque étape dans la liste suivante:
 
 - [ ] [installer VSCode](https://code.visualstudio.com/Download) sur votre machine
 
-- [ ] [installer l'extension PlantUML dans VSCode](https://marketplace.visualstudio.com/items?itemName=jebbs.plantuml)
+- [x] [installer l'extension PlantUML dans VSCode](https://marketplace.visualstudio.com/items?itemName=jebbs.plantuml)
 
 - [ ] configurer l'extension PlantUML pour utiliser plantuml.com comme serveur en ajoutant/modifiant les "User settings" en VSCode:
 
