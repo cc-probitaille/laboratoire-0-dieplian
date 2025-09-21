@@ -136,7 +136,7 @@ export class JeuRouter {
     this._router.post('/demarrerJeu', this.demarrerJeu.bind(this)); // pour .bind voir https://stackoverflow.com/a/15605064/1168342
     this._router.get('/jouer/:nom', this.jouer.bind(this)); // pour .bind voir https://stackoverflow.com/a/15605064/1168342
     this._router.get('/terminerJeu/:nom', this.terminerJeu.bind(this)); // pour .bind voir https://stackoverflow.com/a/15605064/1168342
-    this._router.get('/redemarrerJeu/:nom', this.redemarrerJeu.bind(this)); // pour .bind voir https://stackoverflow.com/a/15605064/1168342
+    this._router.get('/redemarrerJeu', this.redemarrerJeu.bind(this)); // pour .bind voir https://stackoverflow.com/a/15605064/1168342
   }
 
 }
