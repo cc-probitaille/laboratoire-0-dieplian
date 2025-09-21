@@ -1,9 +1,9 @@
 # Identification de l'étudiant
 
-- <nomComplet1>Entrer votre nom</nomComplet1>
-- <courriel1>Entrer votre courriel</courriel1>
-- <codeMoodle1>Entrer votre code moodle obtenu à partir de Signets, 2 lettres majuscule avec 5 chiffres</codeMoodle1>
-- <githubAccount1>Entrer l'identifiant de votre compte github</githubAccount1>
+- <nomComplet1>Lian Diep</nomComplet1>
+- <courriel1>lian.diep.1@ens.etsmtl.ca</courriel1>
+- <codeMoodle1>AT61820</codeMoodle1>
+- <githubAccount1>dieplian</githubAccount1>
 
 # Squelette pour un API simple dans Node, Express et TypeScript
 
@@ -149,6 +149,11 @@ Voici la même figure, mais sous forme de diagramme de séquence avec l'acteur. 
 ![Une opération système du DSS est envoyée par la couche présentation et reçue par un objet (le contrôleur GRASP) dans la couche domaine](http://www.plantuml.com/plantuml/proxy?cache=no&fmt=svg&src=https://raw.githubusercontent.com/profcfuhrmanets/log210-jeu-de-des-node-express-ts/master/docs/modeles/dss-details-demarrerJeu.puml)
 
 ## Artefacts d'analyse et de conception
+
+### Diagramme de classes logicielles
+
+![Diagramme de classes logicielles](http://www.plantuml.com/plantuml/proxy?cache=no&fmt=svg&src=https://raw.githubusercontent.com/profcfuhrmanets/log210-jeu-de-des-node-express-ts/master/docs/modeles/dcu.puml)
+
 
 ### Cas d'utilisation
 
