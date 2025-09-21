@@ -374,7 +374,7 @@ La documentation des fonctionnalités se trouve dans le fichier [docs/Squelette.
 
   > Toutes les instances de Joueur en cours ont été supprimées.
 
-- [ ] ajouter une nouvelle réalisation de cas d'utilisation (RDCU) `docs/modeles/rdcu-redemarrerJeu.puml` pour l'opération système `redemarrerJeu()` (PlantUML)
+- [x] ajouter une nouvelle réalisation de cas d'utilisation (RDCU) `docs/modeles/rdcu-redemarrerJeu.puml` pour l'opération système `redemarrerJeu()` (PlantUML)
 
   Faire un diagramme en PlantUML qui ressemble à ceci:  
   ![RDCU pour redémarrerJeu](https://www.plantuml.com/plantuml/svg/0/RP31IWD138RlynIX5rkmBx38KkXwANXHzBINE9lMMMSoGoO3-aYz-mRxOiOAWk8bWVny-VzaLnL5MugklWOkA9YWwdiagnBy7sMY8xQenypAc0YUI2PaT1hKYFjX_mWbDm6XQJad524vK7C6Q_2X82kiEfiCD51T0LRmRjjxwBu8-W7M6yTP2IISNjJ4IZ4pxCrLbez8JKPUVszPpXMewiZnAZ_Ff23e0zFcj-MScq6r6_aEoys37SQdwyDbs5zIpCbvsFRMpSr7Gla_mkrR8L6t8vxiCPy0 "RDCU pour redémarrerJeu")
@@ -385,7 +385,7 @@ La documentation des fonctionnalités se trouve dans le fichier [docs/Squelette.
 
 ### 3. Écrire des tests pour la fonctionnalité
 
-- [ ] ajouter de nouveaux cas de test pour Redémarrer (Jest/SuperTest)
+- [x] ajouter de nouveaux cas de test pour Redémarrer (Jest/SuperTest)
 
   - ouvrir le fichier `test/routes/jeuRouter-redemarrerJeu-lab0.test.ts`
 
@@ -405,22 +405,22 @@ La documentation des fonctionnalités se trouve dans le fichier [docs/Squelette.
 
     Le test doit vérifier qu'il n'y a plus de joueurs.
 
-- [ ] vérifier que les tests ne passent pas (Jest/SuperTest)
+- [x] vérifier que les tests ne passent pas (Jest/SuperTest)
   `npx jest --colors jeuRouter-redemarrerJeu-lab0.test.ts` va indiquer `n failed`
 
   Cela est normal, car nous avons écrit plusieurs tests avant d'avoir écrit les fonctionnalités, selon la pratique de *Développement piloté par les tests*.
 
 ### 4. Écrire la fonctionnalité
 
-- [ ] ajouter l'opération système `redemarrerJeu` dans le contrôleur GRASP `src/core/jeuDeDes.ts` (TypeScript)
+- [x] ajouter l'opération système `redemarrerJeu` dans le contrôleur GRASP `src/core/jeuDeDes.ts` (TypeScript)
 
   Cette méthode correspond à l'opération système (unique) définie dans le diagramme de séquence système (DSS).
 
-- [ ] coder l'opération `redemarrerJeu` selon la RDCU (TypeScript)
+- [x] coder l'opération `redemarrerJeu` selon la RDCU (TypeScript)
 
   Pour la logique du code, consulter le diagramme de séquence (RDCU) créé à l'étape précédente.
 
-- [ ] ajouter une nouvelle route, dans `src/routes/jeuRouter.ts` (Express)
+- [x] ajouter une nouvelle route, dans `src/routes/jeuRouter.ts` (Express)
 
   - ajouter la fonction `redemarrerJeu`, juste avant la fonction `init()`
 
@@ -434,13 +434,13 @@ La documentation des fonctionnalités se trouve dans le fichier [docs/Squelette.
 
     Il s'agit d'une *définition de [route](http://expressjs.com/en/guide/routing.html)* dans *Express*. Lorsqu'il y aura une requête HTTP `GET` avec `api/v1/jeu/redemarrerJeu`, la fonction `redemarrerJeu` dans la même classe sera appelée (*callback*). Cette fonction est aussi appelée un *route handler* en anglais.
 
-- [ ] faire un build (Node.js)
+- [x] faire un build (Node.js)
 
   `npm run build` devrait passer sans erreurs. Si vous avez des erreurs, essayer de lire et de comprendre pourquoi. Si vous êtes bloqués pendant plus de 5 minutes, demandez de l'aide à un auxiliaire d'enseignement.
 
-- [ ] vérifier que les tests pour la nouvelle fonctionnalité redémarrerJeu passent: `npx jest --colors jeuRouter-redemarrerJeu-lab0.test.ts`. (Node.js)
+- [x] vérifier que les tests pour la nouvelle fonctionnalité redémarrerJeu passent: `npx jest --colors jeuRouter-redemarrerJeu-lab0.test.ts`. (Node.js)
 
-- [ ] vérifier que TOUS les tests des fonctionnalités de base passent (Node.js)
+- [x] vérifier que TOUS les tests des fonctionnalités de base passent (Node.js)
 
   `npx jest --colors --coverage --testPathIgnorePatterns=lab0.test.ts` devrait indiquer que tous les tests passent.
 

@@ -68,6 +68,23 @@ export class JeuDeDes {
         return JSON.stringify(resultat);
     }
 
+    public redemarrerJeu (nom: string): string {
+        if (!this._joueurs.get(nom)) {
+            throw new NotFoundError(`Joueur '${nom}' n'existe pas.`);
+        }
+       
+         this._joueurs.clear();
+       
+    
+
+        const resultat = {
+            nom: nom,
+            message: "Redémarré",
+            joueurs: this._joueurs.size.toString()
+        };
+        return JSON.stringify(resultat);
+    }
+
     // d'autres méthodes (des RDCU)
     brasser() {
         this._d1.brasser();
